@@ -19,5 +19,3 @@ endif
 
 
 let b:current_syntax = 'jrnl'
-
-
