@@ -1,1 +1,1 @@
-autocmd BufRead,BufNewFile /tmp/jrn*.txt setlocal ft=jrnl
+autocmd BufRead,BufNewFile /tmp/jrnl* setlocal filetype=jrnl
