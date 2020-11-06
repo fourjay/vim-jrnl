@@ -10,7 +10,7 @@ let b:did_ftplugin = 1
 let s:save_cpo = &cpoptions
 set cpoptions&vim
 
-setlocal include+=~/.jrnl
-setlocal complete+=i
+setlocal path+=~/.jrnl
+setlocal complete-=t
 
 let &cpoptions = s:save_cpo
