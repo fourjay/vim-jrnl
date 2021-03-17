@@ -29,4 +29,8 @@ function JrnlTags(findstart, base)
 endfun
 setlocal completefunc=JrnlTags
 
+" map sections
+nnoremap <silent><buffer> ]] m':call search('^\s*\[[0-9 :-]\+\]', "W")<CR>
+nnoremap <silent><buffer> [[ m':call search('^\s*\[[0-9 :-]\+\]', "bW")<CR>
+
 let &cpoptions = s:save_cpo
