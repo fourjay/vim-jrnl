@@ -6,6 +6,8 @@ endif
 
 syn case ignore
 
+syntax include @markdown syntax/markdown.vim
+syntax region jrnlMarkdown start='^[^\[]' end='^$' contains=@markdown
 syntax match jrnlDate '^\[*[0-9 :-]\+\]*'
 syntax match jrnlTag '[!#<>@][a-zA-Z0-9+]\+'
 
