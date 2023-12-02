@@ -33,4 +33,7 @@ setlocal completefunc=JrnlTags
 nnoremap <silent><buffer> ]] m':call search('^\s*\[[0-9 :-]\+\]', "W")<CR>
 nnoremap <silent><buffer> [[ m':call search('^\s*\[[0-9 :-]\+\]', "bW")<CR>
 
+setlocal foldmethod=expr
+setlocal foldexpr=jrnl#fold(v:lnum)
+
 let &cpoptions = s:save_cpo
